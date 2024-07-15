@@ -5,8 +5,8 @@ p {
 }
 
 .thumbnail {
-    width: 300px;
-    display: block;
+    width: 100%;
+    /* display: block; */
 }
 
 .search-bar {
@@ -22,22 +22,29 @@ p {
 }
 
 .video-preview {
+
+    /* These below are no longer needed since we are now using the grid
     width: 300px;
     display: inline-block;
     vertical-align: top;
-    margin-right: 15px;
+    margin-right: 15px; */
 }
 
-.channel-picture {
+.video-info-grid {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+}
+
+/* .channel-picture {
     display: inline-block;
-    width: 50px;
+    width: 50px;    longer needed since we set changed the display to grid and used the fr
     vertical-align: top;
-}
+} */
 
-.video-info {
+/* .video-info {
     display: inline-block;
-    width: 200px;
-}
+    width: 245px;    longer needed since we set changed the display to grid 
+} */
 
 .profile-picture {
     width: 40px;
@@ -55,4 +62,11 @@ p {
 
 .video-author {
     margin-bottom: 4px;
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 16px; /*adds the gap or margin between the columns of the grid */
+    row-gap: 40px; /*adds the gap or margin between the rows of the grid */
 }
