@@ -7,14 +7,25 @@
     <title>YouTube.com</title>
 
     <!--Load all the css files and the online fonts-->
-    <link rel="stylesheet" href="youtube.css">
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/video.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <input class="search-bar" type="text" placeholder="Search">
+    <div class="header">
+
+        <div class="left-section"></div>
+        <div class="middle-section">
+            <input class="search-bar" type="text" placeholder="Search">
+        </div>
+        <div class="right-section"></div>
+    </div>
+    
     <div class="video-grid"> <!--A grid containing all the videos-->
+        
         <div class="video-preview">
             <!--created two vertiacl layouts (2divs)-->
             <div class="thumbnail-row">
@@ -182,6 +193,7 @@
                 
             </div>
         </div>
+        
     </div>
 
 </body>

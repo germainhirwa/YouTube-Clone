@@ -1,16 +1,8 @@
-p {
-    font-family: Roboto, Arial; /*This font stack means that the Arial is a backup font whenever we are unable to get Roboto from Google*/
-    margin-top: 0;
-    margin-bottom: 0;
-}
+/*Contains the CSS for the video part of the project*/
 
 .thumbnail {
     width: 100%;
     /* display: block; */
-}
-
-.search-bar {
-    display: block;
 }
 
 .video-title { /*Paragraphs by default have a margin on top and bottom*/

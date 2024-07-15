@@ -1,0 +1,7 @@
+/*Contains the CSS for the general part (like the body and all the paragraphs) of the project*/
+
+p {
+    font-family: Roboto, Arial; /*This font stack means that the Arial is a backup font whenever we are unable to get Roboto from Google*/
+    margin-top: 0;
+    margin-bottom: 0;
+}
