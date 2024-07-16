@@ -64,6 +64,25 @@
     row-gap: 40px; /*adds the gap or margin between the rows of the grid */
 }
 
+/*Using media querry to make the page's grids responsive to the screen size*/
+@media (max-width: 750px) { /*Only gets activated when screen size is <= 600px */
+    .video-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 751px) and (max-width: 999px) {
+    .video-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 1000px) { /*Gives four columns at >=1000px screen size*/
+    .video-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
 .video-time {
     background-color: black;
     color: white;
