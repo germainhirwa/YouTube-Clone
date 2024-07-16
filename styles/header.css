@@ -11,6 +11,16 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    /*Making the header fixed and stay floating at the top of the page*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    /* height: ; */
+    background-color: white;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(228, 228, 228);
 }
 
 /*When resizing the screen, the left and the right section don't change size but middle does. So, left and right will have a pre-defined width while middle will be flex*/
