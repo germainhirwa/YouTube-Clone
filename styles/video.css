@@ -10,7 +10,7 @@
     font-size: 14px;
     font-weight: 500; /*Based on the online font for Robot downloaded (Medium bold)*/
     line-height: 20px;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
 }
 
 .video-preview {
@@ -39,12 +39,12 @@
 } */
 
 .profile-picture {
-    width: 40px;
+    width: 36px;
     border-radius: 50px; /*Giving email rounded corners*/
 }
 
 .thumbnail-row {
-    margin-bottom: 12px; /*Adds space between our two verical divs*/
+    margin-bottom: 8px; /*Adds space between our two verical divs*/
     position: relative; /*So as to be able to put video-time (with the position: absolute) ontop  of it*/
 }
 

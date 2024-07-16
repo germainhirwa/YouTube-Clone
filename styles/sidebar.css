@@ -7,4 +7,31 @@
     top: 55px;
     background-color: white;
     width: 72px;
+    z-index: 200; /*So that it covers slightly the header*/ 
+    padding-top: 5px; /*Move down the icons a little bit*/
+}
+
+/*Styles the sidebar icons*/
+.sidebar-link {
+    height: 74px;
+    display: flex;
+    flex-direction: column; /*Display items vertically not horizontally as with row(default)*/
+    justify-content: center; /*Centers the item horizontally in a flex-box*/
+    align-items: center; /*Centers the item vertically in a flex-box*/
+    cursor: pointer;
+}
+
+/*Change sidebar icons background color when hovered over*/
+.sidebar-link:hover {
+    background-color: rgb(235, 235, 235);
+}
+
+.sidebar-link img {
+    height: 24px;
+    margin-bottom: 4px;
+}
+
+.sidebar-link div {
+    font-family: Roboto, Arial;
+    font-size: 10px;
 }
