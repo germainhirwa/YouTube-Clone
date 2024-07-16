@@ -1,0 +1,10 @@
+/*Contains the CSS for the sidebar part of the project*/
+
+.sidebar {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 55px;
+    background-color: white;
+    width: 72px;
+}

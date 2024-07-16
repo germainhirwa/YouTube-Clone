@@ -45,6 +45,7 @@
 
 .thumbnail-row {
     margin-bottom: 12px; /*Adds space between our two verical divs*/
+    position: relative; /*So as to be able to put video-time (with the position: absolute) ontop  of it*/
 }
 
 .video-author, .video-stats {
@@ -61,4 +62,21 @@
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 16px; /*adds the gap or margin between the columns of the grid */
     row-gap: 40px; /*adds the gap or margin between the rows of the grid */
+}
+
+.video-time {
+    background-color: black;
+    color: white;
+    position: absolute; /*So as to be able to put video-time ontop  of thumbnail-row (with the position: relative) */
+    /*Put video-time in the right-bottom corner of the thumbnail image*/
+    bottom: 8px;
+    right: 5px;
+    font-family: Roboto, Arial;
+    font-size: 12px;
+    font-weight: 500; /*Semi-bold*/
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-radius: 2px;
 }

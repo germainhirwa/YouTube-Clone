@@ -9,4 +9,5 @@ p {
 body {
     margin: 0; /*body comes with a default margin that has to be removed*/
     padding-top: 80px; /*Adds padding/space between the floating header on the page and other body contents*/
+    padding-left: 80px;
 }
