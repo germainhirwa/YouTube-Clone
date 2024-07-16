@@ -76,11 +76,60 @@
     border-color: rgb(192, 192, 192);
     margin-left: -1px; /*Enables to enter the search box without showing two borders*/
     margin-right: 10px;
+
+    /* position: relative; To be able to put the search tooltip absolutely on it */
 }
 
+.search-button, 
+.voice-search-button,
+.upload-icon-container,
+.youtube-apps-icon-container,
+.notifications-icon-container,
+.current-user-picture-container {
+    display: flex;
+    justify-content: center;
+    align-items: center; /*Centers the icons in their container*/
+    position: relative;
+    cursor: pointer;
+}
+
+.search-button .tooltip, 
+.voice-search-button .tooltip, 
+.upload-icon-container .tooltip,
+.youtube-apps-icon-container .tooltip,
+.notifications-icon-container .tooltip,
+.current-user-picture-container .tooltip {
+    font-family: Roboto, Arial;
+    position: absolute;
+    background-color: gray;
+    color: white;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 2px;
+    font-size: 12px;
+    bottom: -30px;
+
+    opacity: 0; /*This makes it invisible unless search button hovered over*/
+    transition: opacity 0.15s; /*transition while changing the opacity*/
+    pointer-events: none;/*disabling hover over tooltip but only have action while hovering over search icon*/
+
+    white-space: nowrap; /*prevents wrapping of tooltip text and button*/
+
+}
+
+.search-button:hover .tooltip, 
+.voice-search-button:hover .tooltip,
+.upload-icon-container:hover .tooltip,
+.youtube-apps-icon-container:hover .tooltip,
+.notifications-icon-container:hover .tooltip,
+.current-user-picture-container:hover .tooltip { /*Means only target tooltip only when header button (e.g;search) is hovered over*/
+    opacity: 1; /*Make the tooltip visible*/
+}
 .search-icon {
     height: 25px;
-    margin-top: 4px;
+    /* margin-top: 4px; flex-box has already handled this with alignment hence no longer important */
 }
 
 .voice-search-button {
@@ -93,7 +142,7 @@
 
 .voice-search-icon {
     height: 24px;
-    margin-top: 4px;
+    /* margin-top: 4px; flex-box has already handled this with alignment hence no longer important */
 }
 
 .right-section {
