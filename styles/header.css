@@ -16,7 +16,7 @@
     top: 0;
     left: 0;
     right: 0;
-    /* height: ; */
+    z-index: 100; /*To always appear ontop of thumbnails even whenever they are scrolled up*/
     background-color: white;
     border-bottom-width: 1px;
     border-bottom-style: solid;
