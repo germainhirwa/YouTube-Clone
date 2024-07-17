@@ -1,15 +1,17 @@
 /*Contains the CSS for the general part (like the body and all the paragraphs) of the project*/
 
 p {
-    font-family: Roboto, Arial; /*This font stack means that the Arial is a backup font whenever we are unable to get Roboto from Google*/
+    /* font-family: Roboto, Arial; This font stack means that the Arial is a backup font whenever we are unable to get Roboto from Google */
     margin-top: 0;
     margin-bottom: 0;
 }
 
 body {
+    font-family: Roboto, Arial; /*Gets inherited by all inner elements on the page and inside the grid*/
     margin: 0; /*body comes with a default margin that has to be removed*/
     padding-top: 80px; /*Adds padding/space between the floating header on the page and other body contents*/
     padding-left: 96px;
     padding-right: 24px;
+    padding-bottom: 20px;
     background-color: rgb(248, 248, 248);
 }

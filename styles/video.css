@@ -40,7 +40,8 @@
 
 .profile-picture {
     width: 36px;
-    border-radius: 50px; /*Giving email rounded corners*/
+    border-radius: 50px; /*Giving them rounded corners*/
+    cursor: pointer;
 }
 
 .thumbnail-row {
@@ -90,12 +91,8 @@
     /*Put video-time in the right-bottom corner of the thumbnail image*/
     bottom: 8px;
     right: 5px;
-    font-family: Roboto, Arial;
     font-size: 12px;
     font-weight: 500; /*Semi-bold*/
-    padding-left: 4px;
-    padding-right: 4px;
-    padding-top: 4px;
-    padding-bottom: 4px;
+    padding: 4px; /*padding on all four sides*/
     border-radius: 2px;
 }

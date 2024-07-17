@@ -32,6 +32,6 @@
 }
 
 .sidebar-link div {
-    font-family: Roboto, Arial;
+    /* font-family: Roboto, Arial; This is being inherited from the body hence nomore needed*/
     font-size: 10px;
 }
